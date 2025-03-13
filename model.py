@@ -109,7 +109,7 @@ prediction = model.predict(new_df)
 prediction_proba = model.predict_proba(new_df)[:, 1]
 
 # Finde einen Betrugsfall im Testdatensatz
-# fraud_sample = X_test[y_test == 1].iloc[0:1]
+fraud_sample = X_test[y_test == 1].iloc[0:1]
 
 # Mache eine Vorhersage für diesen Fall
 prediction = model.predict(new_df)
